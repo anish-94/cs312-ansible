@@ -1,0 +1,33 @@
+﻿Homework 7 
+* Anish Asrani
+* Kevin Talik
+
+
+
+
+Shell Script - 4webservers.sh
+Ansible playbook - webserver.yaml 
+Test apache page = ansible_index.html
+
+
+Pre Setup:
+1. Ensure that all of the machines are on the same network
+2. Add the IP address of the hosts to the top of the 4webservers.sh in the variables (under the #TODO tag)
+3. Chmod 755 4webservers.sh
+
+
+Steps:
+1. Run the shell script which: 
+2. Generates the ssh key
+   1. If you do have a key, 
+      1. Hit enter to make the key in the default directory
+      2. answer no to overwriting the file
+   1. If you dont have a key
+      1. Hit enter to enable default options for key
+1. Next, the script will copy keys to the devices
+   1. If you have never connected
+      1. Select “yes” that you would like to connect to the machine
+      2. Enter the machines password
+1. The Ansible playbook will run
+   1. Ideally, everything should be orange and green
+   2. If it is not, remove the virtual machine and restart
